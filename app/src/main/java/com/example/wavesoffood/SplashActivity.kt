@@ -31,7 +31,7 @@ class SplashActivity : AppCompatActivity() {
         GlobalScope.launch {
             delay(3000)
             withContext(Dispatchers.Main){
-                val intent = Intent(this@SplashActivity,MainActivity::class.java)
+                val intent = Intent(this@SplashActivity,StartActivity::class.java)
                 startActivity(intent)
                 finish()
             }
