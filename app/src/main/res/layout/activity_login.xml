@@ -123,22 +123,35 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:text="Gmail"
+        android:paddingLeft="15dp"
+        android:background="@drawable/whitebutton"
         android:drawableStart="@drawable/google_icon"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:layout_constraintStart_toStartOf="parent"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:text="Facebook"
+        android:paddingLeft="15dp"
+        android:background="@drawable/whitebutton"
         android:drawableStart="@drawable/facebook"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
