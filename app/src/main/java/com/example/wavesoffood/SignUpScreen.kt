@@ -9,10 +9,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.compose.material3.*
-import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.navigation.NavHostController
 
 @Composable
-fun SignUpScreen() {
+fun SignUpScreen(navController: NavHostController) {
     val spacerTextFields = 20.dp
     val context = LocalContext.current
     var mobileFocusedTextKey by remember { mutableStateOf("") }
