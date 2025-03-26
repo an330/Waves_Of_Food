@@ -1,4 +1,4 @@
-package com.example.wavesoffood
+package com.example.wavesoffood.composescreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -15,6 +15,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.wavesoffood.R
 
 @Composable
 fun SplashScreen() {

@@ -1,4 +1,4 @@
-package com.example.wavesoffood
+package com.example.wavesoffood.composescreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -13,8 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
+import com.example.wavesoffood.R
 
 @Composable
 fun StartScreen(onNextClick: () -> Unit) {

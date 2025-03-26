@@ -42,6 +42,6 @@ fun SignUpScreenWithInsets() {
             .fillMaxSize()
             .padding(16.dp) // Apply padding if needed
     ) {
-        SignUpScreen(navController)
+       // SignUpScreen(navController)
     }
 }

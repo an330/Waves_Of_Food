@@ -1,5 +1,6 @@
-package com.example.wavesoffood
+package com.example.wavesoffood.composescreen
 
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -31,9 +32,10 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.wavesoffood.R
 
 @Composable
-fun LoginScreen(navController: NavController? = null) {
+fun LoginScreen(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -150,12 +152,27 @@ fun LoginScreen(navController: NavController? = null) {
 
         // Login Button
         Button(
-            onClick = { /* Handle Login */ },
+            onClick = {  },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 15.dp)
         ) {
             Text("Login")
+        }
+
+        Button(
+            onClick = {
+                if (navController != null) {
+                    navController.navigate("signup")
+                }else{
+                    Log.d("navCCC","isNullll")
+                }
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 15.dp)
+        ) {
+            Text("Create Account")
         }
     }
 }

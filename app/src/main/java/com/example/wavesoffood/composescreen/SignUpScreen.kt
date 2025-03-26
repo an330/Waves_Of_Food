@@ -12,7 +12,7 @@ import androidx.compose.material3.*
 import androidx.navigation.NavHostController
 
 @Composable
-fun SignUpScreen(navController: NavHostController) {
+fun SignUpScreen() {
     val spacerTextFields = 20.dp
     val context = LocalContext.current
     var mobileFocusedTextKey by remember { mutableStateOf("") }
