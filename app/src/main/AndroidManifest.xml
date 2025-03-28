@@ -16,9 +16,7 @@
             android:name=".SignUpActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
+
         <activity
             android:name=".StartActivity"
             android:exported="false"

@@ -13,12 +13,10 @@ class SplashActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Set Jetpack Compose Content (Optional)
         setContent {
             SplashScreen()
         }
 
-        // Launch splash delay safely
         lifecycleScope.launch {
             delay(3000)
             startActivity(Intent(this@SplashActivity, MainActivity::class.java))
